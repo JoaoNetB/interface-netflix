@@ -14,18 +14,20 @@
 
 body {
    background:var(--preto);
-   font-family: sans-serif;
+   font-family: "Arial",sans-serif;
    color: white;
 }
 
 header .container{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
 
 header .logo{
     color: var(--vermelho);
+    margin-left: 5px;
     font-family: "Arial Black";
     font-size: 40px;
 }
@@ -48,7 +50,7 @@ header nav a:hover {
     font-size: 16px;
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/fundo.jpg');
 
-    height: 400px;
+    height: 500px;
     background-size: cover;
 
     display: flex;
@@ -59,13 +61,14 @@ header nav a:hover {
 
 .filme-principal .descricao {
     margin-top: 10px;
-    margin-bottom: 90px;
+    margin-bottom: 40px;
 }
 
-.titulo {
+.filme-principal .titulo {
+    margin-top: 15%;
     font-size: 40px;
-    margin-top: 10%;
-    font-family: 'Trebuchet MS', sans-serif;
+    
+    font-family: 'Arial', sans-serif;
 }
 
 .botao {
@@ -79,7 +82,7 @@ header nav a:hover {
 
     cursor: pointer;
 
-    transition: .3s;
+    transition: .3s ease all;
 }
 
 .botao:hover {
@@ -96,5 +99,16 @@ header nav a:hover {
 }
 
 .filme-principal .container {
-    width: 70%;
+    width: 80%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
 }
